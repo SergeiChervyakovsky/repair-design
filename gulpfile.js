@@ -35,5 +35,5 @@ function styles() {
   extname: ".css"
 }))
 // Путь куда его кладём
-  .pipe(gulp.dest('mincss'))
+  .pipe(gulp.dest('dist'))
 }
