@@ -9,6 +9,8 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 // подключение Sass
 const sass = require("gulp-sass");
+// Автопрефиксер
+const autoprefixer = require('gulp-autoprefixer');
 
 // Сервер BrowserSync
 function bs() {
@@ -43,6 +45,9 @@ function styles() {
  function serveSass() {
   return src("./sass/*.sass")
       .pipe(sass())
+      .pipe(autoprefixer({
+        cascade: false
+    }))
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
 };
