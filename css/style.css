@@ -333,20 +333,25 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background-color: #E3B873;
-      margin: 0 10px; }
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 100px 0; }
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background-color: #E3B873;
+        margin: 0 10px; }
 
 .header {
   position: fixed;
@@ -358,6 +363,7 @@ body {
   padding: 24px 0; }
 
 .menu {
+  letter-spacing: 0.1px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -371,7 +377,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.5rem;
+  margin-right: 2.4rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -380,7 +386,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 3.1rem; }
 
 .button {
   padding: 11px 24px;
@@ -494,6 +500,49 @@ body {
   line-height: 1.35; }
   .title--primary {
     color: #E3B873; }
+
+.types__section-title {
+  margin-bottom: 2rem; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  max-width: 23.57rem;
+  margin-top: -8rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.285rem; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+  margin-bottom: 2.5rem; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-size: 1.29rem;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 1.214rem 1.285rem; }
 
 @media screen and (min-width: 1200px) and (max-width: 1250px) {
   .contacts__phone {
