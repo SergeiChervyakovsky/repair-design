@@ -363,7 +363,6 @@ img {
   padding: 24px 0; }
 
 .menu {
-  letter-spacing: 0.1px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -374,10 +373,13 @@ img {
   text-transform: uppercase; }
 
 .nav__item {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.14rem;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.4rem;
+  margin-right: 2.63rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -388,8 +390,12 @@ img {
 .contacts__phone {
   margin-right: 3.1rem; }
 
+.contacts__button {
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  padding: 10px 20px; }
+
 .button {
-  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -438,10 +444,15 @@ img {
     margin: 0;
     margin-bottom: 3.5rem; }
   .hero__button {
-    margin-right: 20px;
-    padding: 19px 29px; }
+    letter-spacing: 0.2px;
+    line-height: 1.07rem;
+    margin-right: 14px;
+    padding: 18px 27px; }
   .hero__outlinebtn {
-    padding: 19px 45px; }
+    letter-spacing: 0.38px;
+    line-height: 1.07rem;
+    font-weight: 500;
+    padding: 18px 44px 18px 44px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -544,7 +555,7 @@ img {
   color: #ffffff;
   padding: 1.214rem 1.285rem; }
 
-@media screen and (min-width: 1200px) and (max-width: 1250px) {
+@media screen and (min-width: 1200px) and (max-width: 1263px) {
   .contacts__phone {
     margin-right: 0.5rem; } }
 
