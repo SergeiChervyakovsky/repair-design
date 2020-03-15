@@ -398,7 +398,6 @@ img {
   padding: 10px 20px; }
 
 .button {
-  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -613,6 +612,18 @@ img {
   margin: 0 auto;
   margin-bottom: 3.5rem;
   max-width: 52.93rem; }
+
+.card__price {
+  position: absolute;
+  left: 0;
+  bottom: -1.59rem;
+  font-size: 1.285rem;
+  font-family: 'Yeseva One', cursive;
+  line-height: 1.785rem;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  padding: 17px 75px 16px 33px; }
 
 .modal {
   opacity: 0;
