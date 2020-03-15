@@ -395,7 +395,7 @@ img {
 .contacts__button {
   font-weight: 500;
   letter-spacing: 0.35px;
-  padding: 10px 20px; }
+  padding: 13px 20px; }
 
 .button {
   border: none;
@@ -675,7 +675,10 @@ img {
   .modal__policy {
     margin-bottom: 2.714rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 15px 45px;
+    font-size: 13px;
+    line-height: 18px; }
 
 @media screen and (min-width: 1200px) and (max-width: 1250px) {
   .contacts__phone {
