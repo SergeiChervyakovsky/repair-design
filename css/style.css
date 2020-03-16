@@ -649,7 +649,30 @@ img {
   margin-bottom: 3.5rem;
   max-width: 52.93rem; }
 
-.card__price {
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  max-width: 23.57rem;
+  margin-top: -9.3rem;
+  padding: 0.5rem 2.14rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.285rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.1rem; }
+
+.card__list {
+  padding: 0 0 0 1.11rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.8575rem;
+  color: #959595;
+  margin-bottom: 3.72rem; }
+
+.card__pricetag {
   position: absolute;
   left: 0;
   bottom: -1.59rem;
@@ -659,7 +682,7 @@ img {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff;
-  padding: 17px 75px 16px 33px; }
+  padding: 17px 76px 17px 33px; }
 
 .modal {
   opacity: 0;
