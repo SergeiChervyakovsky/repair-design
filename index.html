@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -12,14 +13,14 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
+        <div class="logo menu__logo wow zoomIn">Repair Design Project</div>
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#" class="nav__item wow zoomIn" data-wow-delay="0.2s">Главная</a>
+          <a href="#" class="nav__item wow zoomIn" data-wow-delay="0.4s">Проекты</a>
+          <a href="#" class="nav__item wow zoomIn" data-wow-delay="0.6s">Замер</a>
+          <a href="#" class="nav__item wow zoomIn" data-wow-delay="0.8s">Команда</a>
+          <a href="#" class="nav__item wow zoomIn" data-wow-delay="1s">Отзывы</a>
+          <a href="#" class="nav__item wow zoomIn" data-wow-delay="1.2s">Контакты</a>
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a> 
@@ -37,14 +38,14 @@
     </div>
     <div class="container">
      <div class="hero__content">
-        <h1 class="title hero__title">Турецкий ремонт 
+        <h1 class="title hero__title wow fadeInRight">Турецкий ремонт 
           в&nbsp<span class="title--primary">Ростове-на-дону</span></h1>
-        <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-        <button class="button hero__button button--primary " data-toggle="modal">Рассчитать стоимость</button>
-        <button class="button hero__button hero__outlinebtn button--outline" data-toggle="modal">Отправить заявку</button>
+        <p class="hero__text wow fadeInRight">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+        <button class="button hero__button button--primary wow fadeInRight" data-toggle="modal">Рассчитать стоимость</button>
+        <button class="button hero__button hero__outlinebtn button--outline wow fadeInRight" data-toggle="modal">Отправить заявку</button>
      </div>
     </div>
-    <a href="#" class="hero__scroll-down">Листайте вниз</a>
+    <a href="#" class="hero__scroll-down wow bounceIn" data-wow-delay="5s">Листайте вниз</a>
   </section>
   <section class="section section--dark projects">
    <div class="container">
@@ -158,7 +159,7 @@
   <section class="section control">
     <div class="container">
       <div class="section-title control__section-title section-title--light">
-        <h2 class="section-title__heading">Онлайн контроль</h2>
+        <h2 class="section-title__heading wow zoomIn">Онлайн контроль</h2>
         <!-- /.section-title__heading -->
         <div class="section-title__image">
           <img src="img/video.svg" alt="video">
@@ -196,7 +197,7 @@
   <section class="section types">
     <div class="container">
       <div class="section-title types__section-title">
-        <h2 class="section-title__heading">Виды ремонта</h2>
+        <h2 class="section-title__heading wow zoomIn">Виды ремонта</h2>
         <!-- /.section-title__heading -->
         <div class="section-title__image">
           <img src="img/repair.svg" alt="video">
@@ -311,7 +312,7 @@
   <section class="section design">
     <div class="container">
       <div class="section-title design__section-title">
-        <h2 class="section-title__heading">Дизайн проект</h2>
+        <h2 class="section-title__heading wow zoomIn">Дизайн проект</h2>
         <!-- /.section-title__heading -->
         <div class="section-title__image">
           <img src="img/tools.svg" alt="tools">
@@ -457,6 +458,7 @@
  
  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+ <script src="js/wow.min.js"></script>
  <script src="js/main.js"></script>
 </body>
 </html>
