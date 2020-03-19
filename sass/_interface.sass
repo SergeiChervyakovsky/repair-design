@@ -28,6 +28,9 @@
   font-size: 1.285rem
   color: $light
   padding: 0.5rem 0
+  &--dark
+    &::placeholder
+    color: $dark
   &--light
     &::placeholder
     color: $light
@@ -53,5 +56,12 @@
       margin-right: 0.64rem
     &--center
       justify-content: center
+label
+  &.invalid
+     color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato
+
 
 

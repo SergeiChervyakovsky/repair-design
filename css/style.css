@@ -464,6 +464,8 @@ img {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
+  .input--dark {
+    color: #131313; }
   .input--light {
     color: #ffffff; }
 
@@ -487,6 +489,12 @@ img {
     margin-right: 0.64rem; }
   .policy__label--center {
     justify-content: center; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .hero {
   position: relative;
@@ -843,10 +851,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1.142rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1.142rem; }
   .modal__policy {
     margin-bottom: 2.714rem; }
   .modal__button {
