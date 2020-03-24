@@ -469,32 +469,45 @@ img {
   .input--light {
     color: #ffffff; }
 
-.policy__checkbox {
-  opacity: 0;
-  visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
-
-.policy__label {
-  display: flex;
-  align-items: center;
-  font-size: 1.142rem; }
-  .policy__label::before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    border: 1px solid #E3B873;
-    border-radius: 1px;
-    cursor: pointer;
-    margin-right: 0.64rem; }
-  .policy__label--center {
-    justify-content: center; }
+.policy {
+  position: relative; }
+  .policy__checkbox {
+    opacity: 0;
+    visibility: hidden; }
+    .policy__checkbox:checked ~ .policy__label::before {
+      background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+  .policy__label {
+    display: flex;
+    align-items: center;
+    font-size: 1.142rem; }
+    .policy__label::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border: 1px solid #E3B873;
+      border-radius: 1px;
+      cursor: pointer;
+      margin-right: 0.64rem; }
+    .policy__label--center {
+      justify-content: center; }
 
 label.invalid {
-  color: tomato; }
+  color: tomato;
+  position: absolute;
+  left: 0;
+  bottom: -20px; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+.input-group {
+  position: relative; }
+
+#footerCheckbox-error {
+  left: 137px; }
+
+#controlCheckbox-error {
+  left: 238px; }
 
 .hero {
   position: relative;
@@ -807,6 +820,18 @@ input.invalid {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    width: 100%;
+    max-width: 925px;
+    margin: auto;
+    margin-bottom: 69.41px; }
+  .footer__titleSecond {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    font-weight: normal;
+    text-align: center; }
 
 .modal {
   opacity: 0;

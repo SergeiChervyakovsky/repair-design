@@ -57,6 +57,12 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
+      modalCheckbox: {
+        required:true,
+      },
+      footerCheckbox: {
+        required:true,
+      },
       userPhone: "required",
       // правило-объект(блок)
       userEmail: {
@@ -74,9 +80,79 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
-    }
+      },
+      modalCheckbox: {
+        required:"Подтвердите согласие на обработку данных"
+      },
+    },
   });
+
+  // Валидация формы
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required:true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userQuestion: {
+        required:true,
+        minlength: 10
+      },
+      footerCheckbox: {
+        required:true,
+      },
+      userPhone: "required",
+      
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не более 15 символов"
+      },
+      userQuestion: {
+        required: "Заполните поле",
+        minlength: "Задайте вопрос корректно"
+      },
+      userPhone: "Заполните поле",
+      footerCheckbox: {
+        required:"Подтвердите согласие на обработку данных"
+      },
+    },
+  });
+
+  // Валидация формы
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required:true,
+        minlength: 2,
+        maxlength: 15
+      },
+      controlCheckbox: {
+        required:true,
+      },
+      userPhone: "required",
+      
+    }, //сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух символов",
+        maxlength: "Имя не более 15 символов"
+      },
+      userPhone: "Заполните поле",
+      controlCheckbox: {
+        required:"Подтвердите согласие на обработку данных"
+      },
+    },
+  });
+
 
   // маска для номера телефона
 
